@@ -6,7 +6,7 @@ import Homepage from "./pages/Homepage";
 import MyPage from "./pages/MyPage";
 
 //IMPORTO VARIE LISTE DEI POST //
-import ListPostPage from "./pages/posts/ListPostPage";
+import PostsPage from "./pages/posts/PostsPage";
 import ListDetailPage from "./pages/posts/ListDetailPage";
 
 
@@ -20,7 +20,7 @@ export default function App(){
             <Route path="/personalpage" element={<MyPage />} />
 
             <Route path="/posts">
-              <Route path="" element={<ListPostPage />} />
+              <Route path="" element={<PostsPage />} />
               <Route path=":id" element={<ListDetailPage />} />
             </Route>
           </Route>

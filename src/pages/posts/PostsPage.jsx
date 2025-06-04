@@ -2,14 +2,15 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function ListPostPage(){
+export default function PostsPage(){
     const [posts, setPosts] = useState([]);
-    useEffect(()=>{
+    const fetchPosts = () =>{
         axios.get("http://localhost:3000/posts").then((res)=>{
            setPosts(res.data.data)
         });
+    };
+    useEffect(fetchPosts, []);
 
-    }, []);
     return (
         <div>
             <div className="container">
