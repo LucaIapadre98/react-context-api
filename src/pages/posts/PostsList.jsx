@@ -20,7 +20,7 @@ export default function PostsList (){
                 </tr>
             </thead> 
             <tbody>
-                {posts.map((post)=> <PostCard post={post}/> )}
+                {posts.map((post)=> <PostCard post={post} />)}
             </tbody>           
         </table>
     )
