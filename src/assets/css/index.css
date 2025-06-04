@@ -1,0 +1,31 @@
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 35px 0;
+}
+.container-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}.container-page h1{
+    font-size: 60px;
+}
+.table{
+    max-width: 90%;
+    margin-left: 50px;
+}
+.card{
+    max-width: 35%;
+    margin-top: 50px;
+}
+.card-body{
+    padding: 0;
+}
+.card-header h3{
+    color: rgb(255, 0, 0,0.6);
+}
+.card-body img{
+    width: 100%;
+}
