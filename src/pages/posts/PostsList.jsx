@@ -17,5 +17,5 @@ export default function PostsList (){
                 {posts.map((post)=> <PostCard post={post} />)}
             </tbody>           
         </table>
-    )
+    );
 }
