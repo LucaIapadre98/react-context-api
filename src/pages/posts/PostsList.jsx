@@ -1,15 +1,9 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
 import PostCard from "./PostCard";
+import { usePosts } from "../../components/content/PostsContext";
+
 
 export default function PostsList (){
-    const [posts, setPosts] = useState([]);
-    const fetchPosts = () =>{
-        axios.get("http://localhost:3000/posts").then((res)=>{
-           setPosts(res.data.data)
-        });
-    };
-    useEffect(fetchPosts, []);
+   const{ posts } = usePosts();
     return (
         <table className="table table-striped">
             <thead>
